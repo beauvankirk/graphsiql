@@ -16,4 +16,5 @@ echo "Bundling graphiql.min.js..."
 echo "Bundling graphiql.css..."
 postcss --use autoprefixer -d dist/ css/*.css
 cat dist/*.css > graphiql.css
+cp node_modules/codemirror/theme/* ./
 echo "Done"
